@@ -1,0 +1,53 @@
+model_name:
+gpu: 0
+mode: 
+tmode:
+dmode:
+model:
+  out_size: 64
+  out_channels: 512
+  loss:
+    sim_coeff: 25.0
+    std_coeff: 25.0
+    cov_coeff: 1.0
+  backbone:
+    type: 'resnet18'
+    pretrained: True
+  projection:
+    type: 'MLP'
+    input_dim:  512
+    hidden_dim: 4096
+    output_dim: 4096
+  
+    
+data:
+  dataset: 'nih'
+  nih:
+      train_df: '<path to the dataset directory>/NIH_Chest-Xray-14/train_label_data.csv'
+      valid_df: '<path to the dataset directory>/NIH_Chest-Xray-14/test_label_data.csv'
+
+  resize_size: 224
+  data_workers: 16
+  batch_size: 64
+  
+optimizer:
+  type: 'lars'
+  base_lr: 0.2
+  momentum: 0.9
+  weight_decay: 1e-6
+  total_epochs: 300
+  warmup_epochs: 2
+  exclude_bias_and_bn: true
+  
+    
+checkpoint:
+  resume_path:
+  save_epoch: 10
+  log_step: 50
+  ckpt_path: 
+
+    
+ 
+  
+  
+  
