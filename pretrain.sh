@@ -1,1 +1,0 @@
-python main.py -model mlvicx -arch resnet18 -init imagenet -dataset nih -gpu 0
