@@ -25,7 +25,7 @@ Please don't forget to update paths in /config/mlvicx.yaml
 The process is similar to training on any other dataset.
 
 ## Running
-### Training Teacher Model
+### Training MLVICX
 Once the dataset is set up, update the necessary hyperparameters according to the paper to reproduce any experiments and run,
 
 ```
