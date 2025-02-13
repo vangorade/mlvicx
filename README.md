@@ -16,7 +16,7 @@ This repository is organized as:
 
 ### NIH-CXR 14 Dataset
 
-NIH data is available [here]([https://www.dropbox.com/scl/fi/7jrh5ufzxonwj8mswoa5p/kits19.tar.gz?rlkey=gsadmf861vq9wy1h2qni4iyr7&st=9sqc1nlt&dl=0](https://www.kaggle.com/datasets/nih-chest-xrays/data))
+NIH data is available [here](https://www.kaggle.com/datasets/nih-chest-xrays/data)
 
 We resize images to 224 x 224 for training. Preprocessed CSV files are provided in /data/. Please use the provided dataloaders in /data/ to load data.
 
