@@ -38,7 +38,8 @@ If you want to try different models, use ```--model```. For fine-tuning, change 
 
 ### Cite
 If you find our work useful please cite as,
-@software{mlvicx,
+```bib
+@article{mlvicx,
   author={Singh, Azad and Gorade, Vandan and Mishra, Deepak},
   journal={IEEE Journal of Biomedical and Health Informatics}, 
   title={MLVICX: Multi-Level Variance-Covariance Exploration for Chest X-Ray Self-Supervised Representation Learning}, 
@@ -46,3 +47,4 @@ If you find our work useful please cite as,
   volume={28},
   number={12},
   pages={7480-7490}}
+```
